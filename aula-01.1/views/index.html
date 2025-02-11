@@ -8,6 +8,7 @@
   <body>
     <h1>Bem-vindo a homepage</h1>
     <h2>Iniciando estudos com Flask!</h2>
-    <a href="/games"> va para rota games</a>
+    <!-- O 'url_for' gera a URL associada à função de rota 'games'. Isso permite que o link seja dinâmico, ou seja, se a rota mudar no futuro, a URL será atualizada automaticamente. -->
+    <a href="{{ url_for('games') }}">Vai para a rota games</a>
   </body>
 </html>
