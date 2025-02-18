@@ -6,7 +6,38 @@
     <title>Games</title>
   </head>
   <body>
-    <h1>Bem-vindo a pogina de games</h1>
+    <h1>Bem-vindo a pagina de games</h1>
+    <hr />
+
+    <!-- Loop para percorrer as chaves e valores do dicionário 'game' -->
+    {% for k,v in game.items() %} {{k}}: {{v}}
+    <!-- Exibe a chave e o valor separados por dois pontos -->
+    <br />
+    {% endfor %}
+
+    <p>O jogo {{game['titulo']}} está sendo jogado por:</p>
+
+    <ol>
+      <!-- Inicia um loop para iterar sobre a lista de jogadores 'jogadores' -->
+      {% for j in jogadores %}
+      <li>{{j}}</li>
+      <!-- Exibe cada jogador dentro do loop -->
+      {% endfor %}
+    </ol>
+    <hr />
+
+    <h4>Entrar no jogo</h4>
+
+    <form action="{{url_for('games')}}" method="POST">
+      <label>Jogador</label>
+      <input type="text" name="jogador" />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <hr />
+
+    <p>O jogo {{game['titulo']}} tem {{2025-game['ano']}} anos.</p>
+
     <a href="/"> va para rota principal</a>
 
     <br />
