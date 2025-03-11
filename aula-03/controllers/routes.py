@@ -1,6 +1,4 @@
 from flask import render_template, request, redirect, url_for
-# importando os models
-from models.database import db, Game
 # Essa biblioteca serve para ler uma determinada URL
 import urllib
 # Converte dados para o formato json
@@ -63,18 +61,3 @@ def init_app(app):
 
         return render_template('apigames.html',
                                gamesjson=gamesjson)
-
-        # ROTA COM CRUD DE JOGOS
-
-    @app.route('/estoque', methods=['GET', 'POST'])
-    def estoque():
-        if request.method == 'POST':
-            newgame = Game(request.form['titulo'], request.form['ano'],
-                           request.form['categoria'], request.form['plataforma'], request.form['preco'], request.form['quantidade'])
-            # envia tudo para o banco
-            db.session.add(newgame)
-            db.session.commit()
-            return redirect(url_for('estoque'))
-        # metodo do sqlAlchemy que faz um select geral no banco na tabela games
-        gamesestoque = Game.query.all()
-        return render_template('estoque.html', gamesestoque=gamesestoque)

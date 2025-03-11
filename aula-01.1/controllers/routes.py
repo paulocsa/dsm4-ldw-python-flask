@@ -5,21 +5,7 @@ jogadores = []
 # Definindo um dicionário com as informações do jogo
 # O dicionário 'game' possui chave-valor para o título, ano e categoria do jogo
 gamelist = [
-    # {'titulo': 'CS-GO', 'ano': 2012, 'categoria': 'FPS Online'},
-    # {'titulo': 'League of Legends', 'ano': 2009, 'categoria': 'MOBA'},
-    # {'titulo': 'Minecraft', 'ano': 2011, 'categoria': 'Sandbox'},
-    # {'titulo': 'Fortnite', 'ano': 2017, 'categoria': 'Battle Royale'},
-    # {'titulo': 'Valorant', 'ano': 2020, 'categoria': 'FPS Online'},
-    # {'titulo': 'Overwatch', 'ano': 2016, 'categoria': 'FPS Online'},
-    # {'titulo': 'Dota 2', 'ano': 2013, 'categoria': 'MOBA'},
-    # {'titulo': 'Apex Legends', 'ano': 2019, 'categoria': 'Battle Royale'},
-    # {'titulo': 'PUBG', 'ano': 2017, 'categoria': 'Battle Royale'},
-    # {'titulo': 'Call of Duty: Warzone', 'ano': 2020, 'categoria': 'Battle Royale'},
-    # {'titulo': 'The Witcher 3', 'ano': 2015, 'categoria': 'RPG'},
-    # {'titulo': 'Red Dead Redemption 2', 'ano': 2018, 'categoria': 'Ação/Aventura'},
-    # {'titulo': 'GTA V', 'ano': 2013, 'categoria': 'Ação/Aventura'},
-    # {'titulo': 'Hades', 'ano': 2020, 'categoria': 'Roguelike'},
-    # {'titulo': 'Among Us', 'ano': 2018, 'categoria': 'Party/Multiplayer'}
+    {'titulo': 'CS-GO', 'ano': 2012, 'categoria': 'FPS Online'}
 ]
 
 
