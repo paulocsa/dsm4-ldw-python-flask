@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estoque de Jogos</title>
+</head>
+<body>
+    <h2>Controle de Estoque</h2>
+    <hr />
+    
+    {% for game in gamesestoque %}
+        <p>
+            <strong>Título:</strong> {{ game.titulo }}<br>
+            <strong>Ano:</strong> {{ game.ano }}<br>
+            <strong>Categoria:</strong> {{ game.categoria }}<br>
+            <strong>Plataforma:</strong> {{ game.plataforma }}<br>
+            <strong>Preço:</strong> R$ {{ game.preco }}<br>
+            <strong>Quantidade:</strong> {{ game.quantidade }}
+        </p>
+        <hr />
+    {% endfor %}
+</body>
+</html>
